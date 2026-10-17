@@ -1,0 +1,41 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем стандартные отступы */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Базовые настройки страницы */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Изображения */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Формы наследуют шрифт */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

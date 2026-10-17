@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    color: white;
+}
+a , h1 , h3 , h5 , p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 , h4 , h5 , p {
+    color: #222222;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+h4 {
+    font-size: 18px;
+}
+h1 {
+    font-size: clamp(40px, 8vw, 100px);
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+}
+h2 , h4 {
+    font-family: "Kaushan";
+}
+h2 {
+    font-size: clamp(30px, 4vw, 50px);
+}
+ul{
+    list-style: none;
+}
+

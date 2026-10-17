@@ -1,0 +1,72 @@
+.hero {
+    min-height: 100vh;
+    background-image: 
+    linear-gradient(
+        rgba(var(--mogo1-rgb), 0.9),
+        rgba(var(--mogo3-rgb), 0.9)),
+        url(../Img/backgrounds/Layer\ 15.webp);
+    background-position: 45% 55%;   
+}
+.header {
+    height: 100px;
+}
+
+
+.logo {
+    font-size: 26px;
+    font-weight: 900;
+    padding:  0 0 5px 0 ;
+    transition: 200ms ease-out;
+}
+.logo:hover {
+    color: var(--mogo3);
+    transform: scale(1.1);
+}
+
+
+.con-nav {
+    display: flex;
+    gap: 20px;
+}
+.con1 {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+li { 
+    font-size: 14px;
+}
+li:hover{
+    color: var(--mogo3);
+
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+.nav-list a:hover::after {
+    width: 100%;
+    color: var(--mogo3)
+}
+.nav-list a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--mogo3);
+    transition: width 200ms ease-out;
+}
+
+
+
+.img-scale {
+    transition: transform 200ms ease-out;
+}
+.img-scale:hover {
+    transform: scale(1.2);
+}
