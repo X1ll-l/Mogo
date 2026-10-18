@@ -30,7 +30,12 @@ h2 , h4 {
 h2 {
     font-size: clamp(30px, 4vw, 50px);
 }
-ul{
+ul {
     list-style: none;
 }
-
+p {
+    color: #a7a7a7;
+}
+h5 {
+    font-weight: 200;
+}

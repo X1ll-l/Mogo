@@ -72,7 +72,7 @@
     background: linear-gradient(90deg,red 0%, red 35%, white 35%);
 }
 
-/*! Не знаю нужно ли тут разделять на разные CSS */
+/*!------ABOUT----- Не знаю нужно ли тут разделять на разные CSS*/
 
 .about-inner {
     background: var(--mogo2);
@@ -126,7 +126,7 @@
 
 
 .about2 {
-    height: 20vh;
+    height: 18vh;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -142,3 +142,36 @@
     background-color: rgb(250, 14, 14);
     margin: 25px auto 10px;
 }
+
+.about3 {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.about3 div {
+    flex: 1;
+    display: flex;
+
+}
+.service-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.service-text p{
+    font-size: 12px;
+}
+.service-img {
+    height: 30px;
+
+} 
+
+.title-line {
+    margin-top: 2vh;
+    height: 2px;
+    background: var(--mogo2);
+}
+
+/*!------SERVICE----- Не знаю нужно ли тут разделять на разные CSS */
+
