@@ -32,7 +32,7 @@ a , h1 , h3 , h5 , p {
     font-family: Arial, Helvetica, sans-serif;
 }
 h3 , h4 , h5 , p {
-    color: #222222;
+    color: #383838;
 }
 h3 {
     font-size: 24px;
@@ -42,7 +42,7 @@ h4 {
     font-size: 18px;
 }
 h1 {
-    font-size: clamp(40px, 8vw, 100px);
+    font-size: clamp(40px, 8vw, 140px);
     font-weight: 900;
     line-height: 1;
     text-align: center;
@@ -56,9 +56,10 @@ h2 {
 ul {
     list-style: none;
 }
-p {
+p , hr {
     color: #a7a7a7;
 }
 h5 {
     font-weight: 200;
 }
+
