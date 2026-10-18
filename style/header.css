@@ -1,11 +1,14 @@
 .hero {
     min-height: 100vh;
+    
     background-image: 
     linear-gradient(
         rgba(var(--mogo1-rgb), 0.9),
         rgba(var(--mogo3-rgb), 0.9)),
         url(../Img/backgrounds/Layer\ 15.webp);
     background-position: 45% 55%;   
+    background-size: cover;
+    
 }
 .header {
     height: 100px;
