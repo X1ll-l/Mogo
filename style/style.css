@@ -64,5 +64,7 @@ h5 {
 }
 
 hr {
+    height: 1px;
+    border: none;
     background: #a7a7a7;
 }
