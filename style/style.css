@@ -56,10 +56,13 @@ h2 {
 ul {
     list-style: none;
 }
-p , hr {
+p {
     color: #a7a7a7;
 }
 h5 {
     font-weight: 200;
 }
 
+hr {
+    background: #a7a7a7;
+}
