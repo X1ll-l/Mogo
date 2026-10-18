@@ -183,19 +183,19 @@
 .box {
     flex: 1;
     display: flex;
-    border: rgb(184, 184, 184) 2px solid;
+    border: rgb(184, 184, 184) 1px solid;
 }
 
 .box-inner-l {
     display: flex;
     align-items: center;
-    flex: 0 0 80%;
+    flex: 7;
     gap: 15px;
     padding: 15px;
 }
 
 .box-inner-r {
-    flex: 0 0 20%;
+    flex: 1;
     display: flex;
     align-items: center;
     padding-inline: 15px;
@@ -210,10 +210,37 @@
     display: flex;
 }
 .q2 {
+    display: flex;
+    margin:  10px auto;
     height: 150px;
-    padding: 15px 40px;
+    padding: 10px 30px;
+    
+    
+}
+.q2 p {
+    flex: 0 0 98%;
     overflow-y: auto;
 }
+.w1 {
+    flex: 1;
+}
+
+.q2 p::-webkit-scrollbar {
+    width: 10px;
+}
+.q2 p::-webkit-scrollbar-track {
+    background: transparent;
+}
+.q2 p::-webkit-scrollbar-thumb {
+    background: var(--mogo2);
+    border-radius: 10px;
+}
+.q2 p::-webkit-scrollbar-thumb:hover {
+
+    background: var(--mogo3);
+}
+
+
 .arrow {
     width: 10px;
     height: 10px;
@@ -231,4 +258,79 @@
     border-right: 2px solid #999;
     border-bottom: 2px solid #999;
     transform: rotate(225deg);
+}
+.box-hr {
+    height: 0.5px; 
+}
+
+/*!------Jon Doe----- Не знаю нужно ли тут разделять на разные CSS */
+
+.section-jon-doe {
+    margin-top: 5%;
+    background: #f5f5f5;
+}
+.jon-doe {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.jon-doe-l {
+    flex: 1;
+}
+.jon-doe-r {
+    flex: 4;
+}
+.p-jon-doe {
+    font-size: clamp(12px, 1.2vw, 18px);
+    font-weight: lighter;
+    line-height: 1.5;
+    font-style: italic;
+    letter-spacing: 1.2px;
+}
+.jon-doe-r h4{
+    font-size: clamp(12px, 1.2vw, 20px);
+}
+.jon-doe-r h4::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(250, 14, 14);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.arrow-left,
+.arrow-right {
+    display: block;
+    flex: 0 0 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.arrow-left::before,
+.arrow-right::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    transition: border-color 0.3s ease;
+}
+.arrow-left::before {
+    transform: rotate(-135deg);
+}
+.arrow-right::before {
+    transform: rotate(45deg);
+}
+.arrow-left:hover::before {
+    border-color: var(--mogo3);
+}
+.arrow-right:hover::before {
+    border-color: var(--mogo3);
 }
