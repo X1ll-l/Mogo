@@ -74,6 +74,15 @@
 
 /*!------ABOUT----- Не знаю нужно ли тут разделять на разные CSS*/
 
+.about-us {
+    margin-top: 2%;
+    height: 30vh;
+    display: flex;
+    gap: 30px;
+}
+
+
+
 .about-inner {
     color: white;
     background: var(--mogo2);
@@ -333,13 +342,12 @@
 
 /*!------Team----- Не знаю нужно ли тут разделять на разные CSS */
 
+
 .team {
     margin-top: 4%;
     height: 50vh;
     display: flex;
-    border: red soli 3px;
     gap: 30px;
-    text-align: center;
 }
 
 .p-team {
@@ -375,4 +383,8 @@
 }
 .gallery img:nth-child(3) {
     grid-row: span 2;
+}
+
+.section-after-gallery {    
+    margin-top: 4%;
 }
