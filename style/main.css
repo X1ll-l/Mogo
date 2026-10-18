@@ -125,6 +125,7 @@
     font-weight: 900;
 }
 .about3 {
+    margin-top: 2%;
     height: 15vh;
     display: flex;
     align-items: center;
@@ -143,16 +144,91 @@
 .service-text p{
     font-size: 12px;
 }
-.service-img {
-    height: 30px;
-
-} 
 
 .title-line {
-    margin-top: 5vh;
+    margin-top: 4%;
     height: 3px;
     background: var(--mogo2);
 }
 
 /*!------SERVICE----- Не знаю нужно ли тут разделять на разные CSS */
 
+.service-content {
+    margin-top: 3%;
+    height: 35vh;
+    display: flex; 
+    gap: 2vw;
+    margin-bottom: 3%;
+}
+.service-content > div {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.service-img-boy {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    
+}   
+
+.servise-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    border: rgb(184, 184, 184) 2px solid;
+}
+
+.box-inner-l {
+    display: flex;
+    align-items: center;
+    flex: 0 0 80%;
+    gap: 15px;
+    padding: 15px;
+}
+
+.box-inner-r {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    justify-content: center;
+}
+.box-oppen {
+     flex: 3;
+     flex-direction: column;
+}
+.q1 {
+    flex: 1;
+    display: flex;
+}
+.q2 {
+    height: 150px;
+    padding: 15px 40px;
+    overflow-y: auto;
+}
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+    transform: rotate(45deg);
+    margin-top: -5px;
+}
+.arrow:hover , .arrow-up:hover {
+    border-color: var(--mogo3);
+}
+.arrow-up {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+    transform: rotate(225deg);
+}
