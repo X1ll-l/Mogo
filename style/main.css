@@ -388,3 +388,17 @@
 .section-after-gallery {    
     margin-top: 4%;
 }
+
+
+.map {
+    padding-bottom: 3vh;
+}
+.map-20 {
+    margin-top: 2%;
+    overflow: hidden;
+    background-image: url("../Img/backgrounds/Map.webp");
+
+    background-size: cover;
+
+    background-position: center;
+}
