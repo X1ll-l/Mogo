@@ -75,3 +75,28 @@ hr {
     background: #a7a7a7;
 }
 
+/* !    Курсор.    */
+
+body {
+    cursor: url("../Img/icons/113.svg") 0 0, auto;
+}
+.hero {
+    cursor: url("../Img/icons/111.svg") 0 0, auto;
+}
+a,
+button,
+.arrow-up,
+.arrow,
+.arrow-left::before ,
+.arrow-right::before {
+    cursor: url("../Img/icons/114.svg") 0 0, pointer;
+}
+p,
+h2,
+h3 {
+    cursor: text;
+}
+.q2 p {
+    cursor: url("../Img/icons/113.svg") 0 0, auto;
+}
+
