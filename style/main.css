@@ -560,3 +560,155 @@ html {
 .page-nav-arrow:hover::before {
     border-color: var(--mogo3);
 }
+
+
+/* ===== АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ ===== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+    overflow-x: hidden;
+    }
+    .page-navigation{
+        display: none
+    }
+    .container {
+        padding: 5px;
+    }
+    h5 {
+        font-size: 10px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .title-text{
+        font-size: 12px;
+        padding: 10px;
+    }
+/*!------HERO-----*/
+    .hero {
+        height: 100vh;
+    }
+    .button {
+       padding: 2px 20px; 
+    }
+    .hero-slider {
+        height: 100px;
+        gap: 20px;
+        font-size: 8px;
+    }
+
+/*!------ABOUT-----*/
+
+    .about-us {
+        flex-direction: column;
+        height: 50%;
+        gap: 0px;
+    }   
+    .container.about-us{
+        padding: 0px;
+    }
+    .about {
+        align-items: first baseline;
+    }
+
+    .about div {
+        font-size: 8px;
+    }
+    .about span {
+    font-size: 26px;
+    font-weight: 900;
+    }
+    .about3 {
+        flex-direction: column;
+        padding: 0 20px;
+        height: 50%;
+    }
+    .container hr {
+        display: none;
+    }
+    .service-text p{
+    font-size: 10px;
+    }
+
+/*!------SERVICE-----*/
+
+    .service-content {
+        flex-direction: column;
+        height: 200%;
+    }
+    .service-img {
+        height: 22px;
+    }
+    .container.service-content {
+        padding: 0px;
+    }
+
+/*!------JON DOE-----*/    
+
+    .section-20 {
+        margin-top: 0%;
+        height: 40vh;
+    }
+    .jon-doe {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    }
+    .img-jon-doe{
+        margin-top: 15px;
+        max-height: 100px;
+    }
+    .jon-doe-l {
+        flex: 2;
+    }
+    .jon-doe-r {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 3;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .jon-doe-r p {
+        padding-bottom: 10px;
+    }
+    .arrow-left,
+    .arrow-right{
+        display: none;
+    }
+
+/*!------TEAM-----*/   
+
+    .team {
+        padding: 0px;
+        height: auto;
+        flex-direction: column;
+    }
+
+/*!------LOGOS-----*/
+
+    .section-20-m,
+    .logos {
+        height: 100px;
+        margin-top: 20px;
+    }
+
+/*!------GALLERY-----*/
+
+    .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .map-20 {
+        height: 110px;
+    }
+    .footer {
+        display: none;
+    }
+}
