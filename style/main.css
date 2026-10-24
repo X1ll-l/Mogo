@@ -565,7 +565,7 @@ html {
 
 /*? ===== АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ ===== */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) , (max-height: 600px) {
 
     html,
     body {
@@ -730,10 +730,6 @@ html {
 
     .gallery {
     grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-after-gallery {
-        
     }
 
     h5 {

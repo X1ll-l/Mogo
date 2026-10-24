@@ -1,3 +1,5 @@
+
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -73,6 +75,9 @@ hr {
     height: 1px;
     border: none;
     background: #a7a7a7;
+}
+body {
+    min-height: max(100vh, 600px);
 }
 
 /* !    Курсор.    */
