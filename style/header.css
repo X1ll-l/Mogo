@@ -77,3 +77,20 @@ li:hover{
 .service-img {
     height: 30px;
 } 
+
+
+@media (max-width: 768px) {
+    li { 
+    font-size: 10px;
+    }
+    .con-nav {
+    display: flex;
+    gap: 10px;
+    }
+    .nav-list {
+    gap: 10px;
+    }
+    .con1 {
+    justify-content: space-around;
+}
+}
