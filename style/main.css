@@ -84,6 +84,7 @@
 .about-item {
     position: relative;
     overflow: hidden;
+    
 }
 .about-hover {
     position: absolute;
@@ -612,7 +613,16 @@ html {
     .about {
         align-items: first baseline;
     }
-
+    .about-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .about-item {
+    width: 100%;
+    height: 350px;
+    }
     .about div {
         font-size: 8px;
     }
@@ -705,10 +715,7 @@ html {
     grid-template-columns: repeat(2, 1fr);
     }
 
-    .map-20 {
-        height: 110px;
-    }
-    .footer {
-        display: none;
+    .section-after-gallery {
+        margin-top: 100px;
     }
 }
