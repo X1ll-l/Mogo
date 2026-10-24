@@ -8,3 +8,14 @@
     background-size: cover;
     background-position: center;
 }
+
+
+.footer {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mogo1);
+    background: rgb(38, 38, 38);
+    
+}
