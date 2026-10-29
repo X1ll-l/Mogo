@@ -15,19 +15,28 @@
     <link rel="stylesheet" href="./style/footer.css">
 </head>
 
-<body id="top" .page>
+<body id="top">
     <div class="hero">
         <header class="header">
             <div class="container con1" >
                 <a class="logo" href="#">MoGo</a>
+                
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+                <label for="menu-toggle" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
                 <div class="con-nav">
                     <nav class="nav">
                         <ul class="nav-list">
-                            <li><a class="li-a" href="#">ABOUT</a></li>
-                            <li><a class="li-a" href="#">SERVICE</a></li>
-                            <li><a class="li-a" href="#">WORK</a></li>
-                            <li><a class="li-a" href="#">BLOG</a></li>
-                            <li><a class="li-a" href="#">CONTACT</a></li>
+                            <li><a class="li-a" href="#about">ABOUT</a></li>
+                            <li><a class="li-a" href="#services">SERVICE</a></li>
+                            <li><a class="li-a" href="#team">WORK</a></li>
+                            <li><a class="li-a" href="#gallery">BLOG</a></li>
+                            <li><a class="li-a" href="#bottom">CONTACT</a></li>
                         </ul>
                     </nav>
 
@@ -62,7 +71,7 @@
 
     <main>
 
-        <search id="about" class="section-about-us">
+        <section id="about" class="section-about-us">
             <div class="container section-title">
                 <h4>What we do</h4>
                 <h3>STORY ABOUT US</h3>
@@ -75,7 +84,7 @@
                 <div class="about-item">
                     <img src="./Img/img/1.png" alt="img1">
                     <div class="about-hover">
-                        <a href="">Read More</a>
+                        <a href="#about">Read More</a>
                     </div>
                 </div>
 
@@ -83,7 +92,7 @@
                 <div class="about-item">
                     <img src="./Img/img/2.png" alt="img2">
                     <div class="about-hover">
-                        <a href="">Read More</a>
+                        <a href="#about">Read More</a>
                     </div>
                 </div>
 
@@ -91,14 +100,14 @@
                 <div class="about-item">
                     <img src="./Img/img/3.png" alt="img3">
                     <div class="about-hover">
-                        <a href="">Read More</a>
+                        <a href="#about">Read More</a>
                     </div>
                 </div>
 
 
             </div>
 
-        </search>
+        </section>
 
 
         <section class="section-about">
@@ -239,7 +248,7 @@
 
 <!--!--------------------- TEAM ------------------------->
 
-        <search id="team" class="section-team">
+        <section id="team" class="section-team">
             <div class="container section-title">
                 <h4>Who we are</h4>
                 <h3>MEET OUR TEAM</h3>
@@ -310,7 +319,7 @@
                     <p class="p-team">Developer</p>
                 </div>
             </div>
-        </search>
+        </section>
 
 <!--!--------------------- LOGOS ------------------------->
 

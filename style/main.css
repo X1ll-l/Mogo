@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: clamp(10px, 2vh, 20px);
 }
 .hero-content h1::after {
     content: "";
@@ -18,9 +18,9 @@
 
 .button {
     border: 2px white solid;
-    padding: 5px 30px;
+    padding: 5px clamp(15px, 2.5vw, 30px);
     font-weight: 600;
-    font-size: 15px;
+    font-size: clamp(12px, 1.2vw, 15px);
     transition: 200ms ease-out;
 }
 .button:hover {
@@ -35,7 +35,7 @@
     justify-content: space-between;
     align-items: end;
     gap: 40px;
-    font-size: 14px;
+    font-size: clamp(10px, 1.2vw, 14px);
     padding-bottom: 15px;
     color: rgba(255, 255, 255 ,0.6);
 }
@@ -75,9 +75,9 @@
 
 .about-us {
     margin-top: 2%;
-    height: 20vh;
+    height: 30%;
     display: flex;
-    gap: 30px;
+    gap: clamp(10px, 2vw, 30px);
     margin-bottom: 4%;
     color: white;
 }
@@ -103,7 +103,7 @@
 
 }
 .about {
-    height: 24vh;
+    min-height: 24vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,15 +137,15 @@
     right: 0;
 }
 .about span {
-    font-size: 60px;
+    font-size: clamp(24px, 4vw, 60px);
     font-weight: 900;
 }
 .about3 {
     margin-top: 2%;
-    height: 15vh;
+    min-height: 15vh;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: clamp(10px, 3vw, 40px);
 }
 .about3 div {
     flex: 1;
@@ -170,9 +170,9 @@
 
 .service-content {
     margin-top: 3%;
-    height: 35vh;
-    display: flex; 
-    gap: 2vw;
+    min-height: 35vh;
+    display: flex;
+    gap: clamp(10px, 2vw, 24px);
     margin-bottom: 3%;
 }
 .service-content > div {
@@ -221,9 +221,10 @@
 }
 .q2 {
     display: flex;
-    margin:  10px auto;
-    height: 150px;
-    padding: 10px 30px;  
+    margin: 10px auto;
+    min-height: 120px;
+    height: auto;
+    padding: 10px clamp(10px, 2.5vw, 30px);
 }
 .q2 p {
     flex: 0 0 98%;
@@ -271,11 +272,11 @@
 /*!------Jon Doe----- Не знаю нужно ли тут разделять на разные CSS */
 
 .jon-doe {
-    height: 20vh;
+    min-height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: clamp(15px, 4vw, 50px);
 }
 .jon-doe-l {
     flex: 1;
@@ -337,9 +338,8 @@
 
 .team {
     margin-top: 4%;
-    height: 50vh;
     display: flex;
-    gap: 30px;
+    gap: clamp(10px, 2.5vw, 30px);
 }
 .team > div {
     flex: 1;
@@ -431,7 +431,7 @@
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 30vh);
+    grid-auto-rows: clamp(120px, 20vw, 300px);
 }
 .gallery-item {
     display: block;
@@ -565,7 +565,7 @@ html {
 
 /*? ===== АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ ===== */
 
-@media (max-width: 768px) , (max-height: 600px) {
+@media (max-width: 768px) {
 
     html,
     body {
@@ -609,15 +609,20 @@ html {
 
     .about-us {
         flex-direction: column;
-        height: 50%;
+        height: auto;
         gap: 0px;
     }   
     .container.about-us{
         padding: 0px;
     }
     .about {
-        align-items: first baseline;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 0;
+    height: auto;
     }
+    
     .about-item img {
     display: block;
     width: 100%;
@@ -638,7 +643,7 @@ html {
     .about3 {
         flex-direction: column;
         padding: 0 20px;
-        height: 50%;
+        height: auto;
     }
     .container hr {
         display: none;
@@ -674,11 +679,12 @@ html {
 
     .section-20 {
         margin-top: 0%;
-        height: 40vh;
+        height: 50%;
     }
     .jon-doe {
         margin-top: 50px;
-        height: 40vh;
+        height: auto;
+        min-height: 40vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -730,10 +736,34 @@ html {
 
     .gallery {
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: clamp(180px, 35vw, 260px);
     }
-
     h5 {
         font-size: 16px;
     }
     
+}
+
+@media (max-height: 600px) and (min-width: 769px) {
+    .hero-content {
+        height: auto;
+        min-height: 0;
+        padding: 20px 0;
+        gap: 10px;
+    }
+    .hero-content h1::after {
+        margin: 15px auto 5px;
+    }
+    .section-title {
+        min-height: auto;
+        padding-top: 20px;
+    }
+    .section-title h3::after {
+        margin: 10px auto 5px;
+    }
+    .title-text {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
 }

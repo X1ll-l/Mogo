@@ -1,16 +1,14 @@
-
-
 .container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 clamp(10px, 2vw, 20px);
     margin: 0 auto;
 }
 .hero {
     color: white;
 }
 .section-title {
-    height: 18vh;
+    min-height: 18vh;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -27,8 +25,8 @@
 }
 .title-text {
     text-align: center;
-    font-size: 14px;
-    padding: 30px 100px ;
+    font-size: clamp(12px, 1.2vw, 14px);
+    padding: 2% 8%;
 }
 .section-20 {
     margin-top: 5%;
