@@ -170,14 +170,15 @@
 
 .service-content {
     margin-top: 3%;
-    min-height: 35vh;
     display: flex;
+    align-items: stretch;
     gap: clamp(10px, 2vw, 24px);
     margin-bottom: 3%;
 }
+
 .service-content > div {
-    height: 100%;
-    flex: 1;
+    flex: 1 1 0;
+    min-width: 0;
     overflow: hidden;
 }
 .service-img-boy {
@@ -185,7 +186,6 @@
     height: 100%;
     min-height: 200px;
     object-fit: cover;
-    
 }   
 .serviсe-box {
     display: flex;
@@ -221,13 +221,12 @@
 }
 .q2 {
     display: flex;
-    margin: 10px auto;
-    min-height: 120px;
-    height: auto;
+    margin: 20px 20px;
+    height: 200px;
     padding: 10px clamp(10px, 2.5vw, 30px);
 }
 .q2 p {
-    flex: 0 0 98%;
+    flex: 0 0 100%;
     overflow-y: auto;
 }
 .w1 {
@@ -661,10 +660,6 @@ html {
 
 /*!------SERVICE-----*/
 
-    .service-content {
-        flex-direction: column;
-        height: 200%;
-    }
     .service-img {
         height: 22px;
     }
