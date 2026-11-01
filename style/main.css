@@ -124,15 +124,80 @@
     justify-content: space-between;
     gap: 20px;
 
-    > div {
+    .box-l {
         flex: 1;
         min-height: 400px;
-        background: red;
 
         .img-l {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    .box-r {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 400px;
+        gap: 20px;
+
+        .box-oppen {
+            display: flex;
+            flex-direction: column;
+            flex: 3;
+            min-height: 0;
+            
+            border: 1px solid var(--text-light);
+
+            .box-oppen-inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex: 0 0 60px;
+                border: 1px solid var(--text-light);
+                padding: 0 30px 0 20px;
+            }
+            .box-oppen-text {
+                flex: 1;
+                min-height: 0;
+                overflow-y: auto;
+                padding: 15px 20px;
+                
+
+               
+                &::-webkit-scrollbar {
+                    width: 12px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                }                
+                &::-webkit-scrollbar-thumb {
+                    background: var(--mogo2);
+                    border-radius: 10px;
+                }              
+                &::-webkit-scrollbar-thumb:hover {
+                    background: var(--mogo3);
+                }
+            }
+            
+        }
+        .box-close {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 0 0 60px;
+            border: 1px solid var(--text-light);
+            padding: 0 30px 0 20px;
+        }
+        .box-close-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            img {
+                height: 30px;
+            }
+        } 
     }
 }
