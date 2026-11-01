@@ -1,103 +1,101 @@
+:root {
+    --mogo1: #f38181;
+    --mogo2: #95e1d3;
+    --mogo3: #ffdf6b;
+
+    --mogo1-rgb: 243, 129, 129;
+    --mogo2-rgb: 149, 225, 211;
+    --mogo3-rgb: 253, 229, 139;
+
+    --text: #333;
+    --text-light: #999;
+    --white: #fff;
+    --border: #e5e5e5;
+
+    --container-width: 1200px;
+    --container-padding: 20px;
+
+    --section-spacing-bottom: 70px;
+    --section-spacing-top: 70px;
+
+    --transition: all 0.3s ease-out;
+    --icon-scale: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding: 0 clamp(10px, 2vw, 20px);
+    max-width: var(--container-width);
     margin: 0 auto;
+    padding: 0 var(--container-padding);
+    border: #ff0000 dotted 1px;
 }
-.hero {
-    color: white;
+
+section {
+    width: 100%;
 }
+
+.section {
+    padding-top: var(--section-spacing-top);
+    padding-bottom: var(--section-spacing-top);
+}
+.section-top {
+    padding-top: var(--section-spacing-top);
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+
+
+
+
 .section-title {
-    min-height: 18vh;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px;
+    text-align: center;
+    margin-bottom: 50px;
 }
-.section-title h3::after {
+
+.section-title h3 {
+    font-family: "Kaushan", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.section-title h2::after {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
-    background-color: rgb(250, 14, 14);
-    margin: 25px auto 10px;
+    background-color: var(--mogo1);
+    margin: 35px auto 0;
 }
-.title-text {
+
+.section-description {
+    max-width: 950px;
+    margin: 0 auto;
+    color: var(--text-light);
     text-align: center;
-    font-size: clamp(12px, 1.2vw, 14px);
-    padding: 2% 8%;
-}
-.section-20 {
-    margin-top: 5%;
-    background: #f5f5f5;
-}
-
-a , h1 , h3 , h5 , p ,.about-us {
-    font-family: Arial, Helvetica, sans-serif;
-}
-h3 , h4 , h5 , p {
-    color: #383838;
-}
-h3 {
-    font-size: clamp(12px, 2vw, 25px);
-    font-weight: 900;
-}
-h4 {
-    font-size: 18px;
-}
-h1 {
-    font-size: clamp(40px, 8vw, 140px);
-    font-weight: 900;
-    line-height: 1;
-    text-align: center;
-}
-h2 , h4 {
-    font-family: "Kaushan";
-}
-h2 {
-    font-size: clamp(30px, 4vw, 50px);
-}
-ul {
-    list-style: none;
-}
-p {
-    font-size: clamp(10px, 2vw, 14px);
-    color: #a7a7a7;
-}
-h5 {
-    font-weight: 200;
-}
-
-hr {
-    height: 1px;
-    border: none;
-    background: #a7a7a7;
-}
-body {
-    min-height: max(100vh, 600px);
-}
-
-/* !    Курсор.    */
-
-body {
-    cursor: url("../Img/icons/113.svg") 0 0, auto;
-}
-
-a,
-button,
-.arrow-up,
-.arrow,
-.arrow-left::before ,
-.arrow-right::before {
-    cursor: url("../Img/icons/114.svg") 0 0, pointer;
-}
-p,
-h2,
-h3 {
-    cursor: text;
-}
-.q2 p {
-    cursor: url("../Img/icons/113.svg") 0 0, auto;
 }
 

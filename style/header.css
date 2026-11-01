@@ -1,220 +1,158 @@
-.hero {
-    min-height: 100vh;
-
-    background-image:
+.header {
+    color: var(--white);
+    height: 100vh;
+    background:
         linear-gradient(
             rgba(var(--mogo1-rgb), 0.9),
             rgba(var(--mogo3-rgb), 0.9)
         ),
-        url(../Img/backgrounds/Layer\ 15.webp);
-
-    background-position: 45% 55%;
-    background-size: cover;
+        url("../Img/backgrounds/Layer\ 15.webp") center / cover no-repeat;
 }
 
-/* Шапка */
 
-.header {
-    height: clamp(70px, 8vh, 100px);
+
+.hero {
+    height: 100%;  
 }
 
-.con1 {
-    height: 100%;
+.navigation {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-}
-
-/* Логотип */
-
-.logo {
-    font-size: clamp(20px, 2.2vw, 26px);
-    font-weight: 900;
-    padding: 0 0 5px 0;
-}
-
-.logo:hover {
-    color: var(--mogo3);
-    transform: scale(1.1);
-}
-
-/* Навигация */
-
-.con-nav {
-    display: flex;
-    align-items: center;
-    gap: clamp(8px, 1.5vw, 20px);
-}
-
-li {
-    font-size: clamp(10px, 1.1vw, 14px);
-}
-
-li:hover {
-    color: var(--mogo3);
-}
-
-.nav-list {
-    display: flex;
-    gap: clamp(10px, 2.5vw, 30px);
-}
-
-.nav-list a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: var(--mogo3);
-    transition: width 200ms ease-out;
-}
-
-.nav-list a:hover::after {
-    width: 100%;
-}
-
-/* Иконки */
-
-.img-scale {
-    transition: transform 200ms ease-out;
-}
-
-.img-scale:hover {
-    transform: scale(1.2);
-}
-
-.service-img {
-    height: 30px;
-}
-
-/* Бургер скрыт на компьютере */
-
-.menu-toggle {
-    display: none;
-}
-
-.burger {
-    display: none;
-}
-
-/* Маленькая высота окна на компьютере */
-
-@media (max-height: 600px) and (min-width: 769px) {
-    li {
-        font-size: 10px;
-    }
-
-    .con-nav {
-        gap: 10px;
-    }
-
-    .nav-list {
-        gap: 10px;
-    }
-
-    .con1 {
-        justify-content: space-around;
-    }
-}
-
-/* Мобильная версия */
-
-@media (max-width: 768px) {
-
-    /* Шапка и отступы */
-
-    .con1 {
-        position: relative;
-        justify-content: space-between;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
+    height: 80px;
 
     .logo {
-        margin-right: auto;
-        flex-shrink: 0;
+        font-size: 30px;
+        font-weight: 600;
+        transition: var(--transition);
+
+        &:hover {
+            transform: var(--icon-scale);
+            color: var(--mogo3);
+        }
     }
+}
 
-    /* Переключатель */
 
-    .menu-toggle {
-        display: block;
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        opacity: 0;
-    }
+.nav {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
 
-    /* Кнопка бургера */
-
-    .burger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-shrink: 0;
-
-        width: 28px;
-        height: 21px;
-        margin-left: 20px;
-
-        cursor: pointer;
-        z-index: 20;
-    }
-
-    .burger span {
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        border-radius: 2px;
-    }
-
-    /* Выпадающее меню */
-
-    .con-nav {
-        display: none;
-
-        position: absolute;
-        top: 100%;
-        left: 20px;
-        right: 20px;
-
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        padding: 20px;
-        box-sizing: border-box;
-
-        /* background: rgba(var(--mogo1-rgb), 0.3);
-        backdrop-filter: blur(10px);
-        border-radius: 20px; */
-        background: rgba(var(--mogo1-rgb), 0.3);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        z-index: 15;
-    }
-
-    /* Пункты меню */
-    
-    .nav {
-        width: 100%;
-    }
     .nav-list {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         gap: 20px;
     }
-    .nav-list li {
-        font-size: 14px;
+    .li-a {
+        transition: var(--transition);
+        &:hover {
+            color: var(--mogo3);
+            text-underline-offset: 8px;
+            text-decoration: underline;
+        }
     }
     .img-scale {
-        flex-shrink: 0;
+        transition: var(--transition);
+        &:hover {
+            transform: var(--icon-scale);
+        }
     }
-    .menu-toggle:checked ~ .con-nav {
-        display: flex;
+}
+
+
+.hero-content {
+    height: calc(100% - 180px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: clamp(20px, 5vw, 70px);
+        font-family: "Kaushan";
+    }
+    h1 {
+        font-size: clamp(32px, 8vw, 150px);
+        line-height: 1;
+        letter-spacing: -6px;
+        text-align: center;
+        &::after{
+            content: "";
+            display: block;
+            width: 90px;
+            height: 3px;
+            background-color: var(--white);
+            margin: 35px auto 35px;
+        }
+    }
+    button {
+        background: none;
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 600;
+        padding: 8px 30px;
+        border: 3px solid var(--white);
+        transition: var(--transition);
+        &:hover {
+            color: var(--mogo3);
+            border: 3px solid var(--mogo3);
+        }
+    }
+}
+
+
+.slider {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .slider-item {
+        position: relative;
+        flex: 1;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--white);
+        text-decoration: none;
+        transition: var(--transition);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 0;
+            width: 90%;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.5);
+            transition: var(--transition);
+        }
+
+        span {
+            font-size: 18px;
+        }
+        &.active {
+            font-weight: 700;
+
+            &::before {
+                background: linear-gradient(
+                    90deg,
+                    var(--mogo1) 36%,
+                    var(--white) 36%
+                );
+            }
+        }
+
+        &:hover {
+            color: var(--mogo1);
+            font-weight: 700;
+
+            &::before {
+                background: linear-gradient(
+                    90deg,
+                    var(--mogo1) 36%,
+                    var(--white) 36%
+                );
+            }
+        }
     }
 }

@@ -7,7 +7,6 @@
     <link rel="icon" href="./Img/icons/M.webp" type="image/png">
 
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/color.css">
     <link rel="stylesheet" href="./style/fond.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/header.css">
@@ -15,459 +14,259 @@
     <link rel="stylesheet" href="./style/footer.css">
 </head>
 
-<body id="top">
-    <div class="hero">
-        <header class="header">
-            <div class="container con1" >
+
+<body>
+    <header class="header">
+        <div class="container hero">
+            <div class="navigation">
                 <a class="logo" href="#">MoGo</a>
-                
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-                <label for="menu-toggle" class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
 
-                <div class="con-nav">
-                    <nav class="nav">
-                        <ul class="nav-list">
-                            <li><a class="li-a" href="#about">ABOUT</a></li>
-                            <li><a class="li-a" href="#services">SERVICE</a></li>
-                            <li><a class="li-a" href="#team">WORK</a></li>
-                            <li><a class="li-a" href="#gallery">BLOG</a></li>
-                            <li><a class="li-a" href="#bottom">CONTACT</a></li>
-                        </ul>
-                    </nav>
-
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a class="li-a" href="#about">ABOUT</a></li>
+                        <li><a class="li-a" href="#services">SERVICE</a></li>
+                        <li><a class="li-a" href="#team">WORK</a></li>
+                        <li><a class="li-a" href="#gallery">BLOG</a></li>
+                        <li><a class="li-a" href="#bottom">CONTACT</a></li>
+                    </ul>
+                    
                     <a class="img-scale" href="#"><img src="./Img/icons/SHOPPING CART.png" alt="SHOPPING"></a>
                     <a class="img-scale" href="#"><img src="./Img/icons/MAGNIFYING GLASS.png" alt="MAGNIFYING"></a>
-                </div>
+                </nav>              
+
+
             </div>
-        </header>
 
-        <section class="container hero-content">
-            <h2>Creative Template</h2>
-            <h1>WELCOME<br>TO MOGO</h1>
-            <a class="button" href="#">LEARN MORE</a>
-        </section>
-        <div class="container hero-slider">
-            <a href="#" class="slider-item active">
-                <span>01</span> INTRO
-            </a>
-            <a href="#" class="slider-item">
-                <span>02</span> WORK
-            </a>
-            <a href="#" class="slider-item">
-                <span>03</span> ABOUT
-            </a>
-            <a href="#" class="slider-item">
-                <span>04</span> CONTACTS
-            </a>
+            <div class="hero-content">
+                <h2>Creative Template</h2>
+                <h1>WELCOME <br> TO MOGO</h1>
+                <button>
+                    <a href="#about">LEARN MORE</a>
+                </button>
+            </div>
+                
+            <div class="slider">
+                <a href="#" class="slider-item active">
+                    <span>01</span> INTRO
+                </a>
+                <a href="#" class="slider-item">
+                    <span>02</span> WORK
+                </a>
+                <a href="#" class="slider-item">
+                    <span>03</span> ABOUT
+                </a>
+                <a href="#" class="slider-item">
+                    <span>04</span> CONTACTS
+                </a>
+            </div>
         </div>
-    </div>
+    </header>
 
-<!--!--------------------- ABOUT ------------------------->
-
+    
     <main>
 
-        <section id="about" class="section-about-us">
-            <div class="container section-title">
-                <h4>What we do</h4>
-                <h3>STORY ABOUT US</h3>
-            </div>
-            <p class="container title-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae cumque molestiae commodi porro nulla voluptates. Blanditiis aut harum repellat aspernatur alias vel obcaecati reprehenderit cum iure, dolorum aliquam earum impedit quis ut porro incidunt expedita.</p>
-            
-            
-            <div class="container about-us">
+<!--!---------------- ABOUT ------------------>
 
+        <section class="section container" id="about">
+            <div class="section-title">
+                <h3>What we do</h3>
+                <h2>STORY ABOUT US</h2>
+            </div>
+            <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta unde beatae eligendi repudiandae? Iste, molestias totam delectus quaerat, repellat vitae atque neque, vel obcaecati earum nam mollitia tenetur ratione!</p>
+
+            <div class="about-cards section-top">
                 <div class="about-item">
                     <img src="./Img/img/1.png" alt="img1">
                     <div class="about-hover">
                         <a href="#about">Read More</a>
                     </div>
                 </div>
-
-
                 <div class="about-item">
                     <img src="./Img/img/2.png" alt="img2">
                     <div class="about-hover">
                         <a href="#about">Read More</a>
                     </div>
                 </div>
-
-
                 <div class="about-item">
                     <img src="./Img/img/3.png" alt="img3">
                     <div class="about-hover">
                         <a href="#about">Read More</a>
                     </div>
                 </div>
-
-
             </div>
-
         </section>
 
+<!--!---------------- STATISTICS ------------------>
 
-        <section class="section-about">
-            <div class="about-inner">
-                <div class="container about">
-                    <div><span>42</span>WEB DESIGN PROJECTS</div>
-                    <div><span>123</span>HAPPY CLIENT</div>
-                    <div><span>15</span>AWARD WINNER</div>
-                    <div><span>99</span>CUO OF COFFE</div>
-                    <div><span>24</span>MEMBERS</div>
+        <section class="section statistics">
+            <div class="container">
+                <div class="statistics-box">
+
+                    <div class="statistics-item">
+                        <span>42</span>
+                        WEB DESIGN PROJECTS
+                    </div>
+
+                    <div class="statistics-item">
+                        <span>123</span>
+                        HAPPY CLIENT
+                    </div>
+
+                    <div class="statistics-item">
+                        <span>15</span>
+                        AWARD WINNER
+                    </div>
+
+                    <div class="statistics-item">
+                        <span>99</span>
+                        CUO OF COFFE
+                    </div>
+
+                    <div class="statistics-item">
+                        <span>24</span>
+                        MEMBERS
+                    </div>
+
                 </div>
             </div>
-            <div class="container section-title">
-                <h4>We work whith</h4>
-                <h3>AMAZING SERVICES</h3>
+        </section>
+
+<!--!---------------- AMAZING SERVICES ------------------>
+
+        <section class="section container" id="amazing">
+            <div class="section-title">
+                <h3>We work whith</h3>
+                <h2>AMAZING SERVICES</h2>
             </div>
-            <div class="container about3">
-                <div>
-                    <img class="service-img" src="./Img/icons/s1.png" alt="icon">
-                    <div class="service-text">
-                        <h5>PHOTOGRAPHY</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi quam mollitia.</p>
+            <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur sequi optio iusto eaque mollitia delectus autem eveniet consectetur modi minima ad harum unde nesciunt, dolor molestias dolorum magnam perspiciatis illum ab, eius eos! Reprehenderit, similique molestias? Eveniet, suscipit error.</p>
+
+            <div class="amazing section-top">
+                <div class="amazing-box">
+                    <div>
+                        <img class="amazing-img" src="./Img/icons/s1.png" alt="icon">
+                        <div class="amazing-text">
+                            <h5>PHOTOGRAPHY</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi quam mollitia.</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img class="amazing-img" src="./Img/icons/s2.png" alt="icon">
+                        <div class="amazing-text">
+                            <h5>WEB DESING</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro officiis adipisci!</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="amazing-img" src="./Img/icons/s3.png" alt="icon">
+                        <div class="amazing-text">
+                            <h5>CREATIVITY</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut suscipit numquam?</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img class="service-img" src="./Img/icons/s2.png" alt="icon">
-                    <div class="service-text">
-                        <h5>WEB DESING</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro officiis adipisci!</p>
-                    </div>
-                </div>
-                <div>
-                    <img class="service-img" src="./Img/icons/s3.png" alt="icon">
-                    <div class="service-text">
-                        <h5>CREATIVITY</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut suscipit numquam?</p>
-                    </div>
-                </div>
-                
-                
             </div>
-            <div class="container"><hr></div>
-            <div class="container about3">
+
+            <hr class="amazing-line">
+
+            <div class="amazing-box">
                 <div>
-                    <img class="service-img" src="./Img/icons/s4.png" alt="icon">
-                    <div class="service-text">
+                    <img class="amazing-img" src="./Img/icons/s4.png" alt="icon">
+                    <div class="amazing-text">
                         <h5>SEO</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui dignissimos non.</p>
                     </div>
                 </div>
+
                 <div>
-                    <img class="service-img" src="./Img/icons/s5.png" alt="icon">
-                    <div class="service-text">
-                        <h5>CSS/HTML</h5>
+                    <img class="amazing-img" src="./Img/icons/s5.png" alt="icon">
+                    <div class="amazing-text">
+                           <h5>CSS/HTML</h5>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed a illum laboriosam?</p>
                     </div>
                 </div>
+
                 <div>
-                    <img class="service-img" src="./Img/icons/s6.png" alt="icon">
-                    <div class="service-text">
+                    <img class="amazing-img" src="./Img/icons/s6.png" alt="icon">
+                    <div class="amazing-text">
                         <h5>DIGITAL</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum deleniti tenetur?</p>
                     </div>
                 </div>
             </div>
-            <hr class="title-line">
-        </section>
-
-<!--!--------------------- SERVICE ------------------------->
-
-        <section id="services" class="section-service">
-            <div class="container section-title">
-                <h4>Servise</h4>
-                <h3>WHAT WE DO</h3>
-            </div>
-            <p class="container title-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae reiciendis molestias porro harum nobis. Ut in obcaecati quaerat. Nisi sint aliquam pariatur, cumque quis quos quod animi vero ex delectus dicta similique sunt facilis dolore, cupiditate doloribus dolorem ipsa placeat.</p>
-            <div class="container service-content">
-                <div>
-                    <img class="service-img-boy" src="./Img/people/boy.webp" alt="img-boy">
-                </div>
-
-
-                <div class="serviсe-box">
-                    <div class="box box-oppen">
-                        <div class="q1">
-                            <div class="box-inner-l">
-                                <img class="service-img" src="./Img/icons/PICTURE1.png" alt="box-icon">
-                                <h5>PHOTOGRAPHY</h5>
-                            </div>
-                            <div class="box-inner-r">
-                                <span class="arrow-up"></span>
-                            </div>
-                        </div>   
-                        <hr class="box-hr">
-                        <div class="q2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi ratione doloribus fugiat, pariatur ex quam deserunt soluta quo reprehenderit et quia magnam dignissimos repudiandae laborum hic omnis eaque saepe amet sit, ipsam nisi adipisci? Amet laboriosam incidunt tenetur atque quasi. Nam aperiam modi placeat accusantium ratione ducimus ipsa accusamus unde! Quisquam, corrupti nam! Laudantium earum corporis magnam reprehenderit doloribus quis ipsam nemo? Cumque, iure aut. Beatae voluptas error dignissimos iusto quam excepturi quod labore consequatur nemo nihil. Consequuntur dolor quibusdam molestiae quod maiores facere aliquid dolores et? Molestias dolores sunt accusantium pariatur quibusdam mollitia consequuntur repellendus rem quidem exercitationem magnam vel laudantium, dolorum sit expedita! Eveniet maxime perferendis ullam dolorum eligendi, doloremque repudiandae architecto nostrum eaque! Alias autem quos veniam quasi natus exercitationem ipsum inventore eos illum, ducimus, odit sapiente quisquam! Veniam ipsa nisi beatae reiciendis odit tempore quas magni error eveniet necessitatibus nihil a ea dicta, quia ducimus repellendus ipsum molestiae debitis amet sed harum voluptas placeat nostrum. Atque aspernatur voluptas nostrum molestiae beatae, blanditiis, in explicabo, excepturi aliquam perferendis quas ratione corporis aperiam eum porro quis. Iste, reiciendis reprehenderit placeat soluta aspernatur ipsa veniam ducimus aliquid, dolor dolorem, molestias dolores ab. Nihil repellendus ipsum possimus labore ipsam.</p>
-                            <div class="w1"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="box">
-                        <div class="box-inner-l">
-                            <img class="service-img" src="./Img/icons/2w.png" alt="box-icon">
-                            <h5>GREATIVITY</h5>
-                        </div>
-                        <div class="box-inner-r">
-                            <span class="arrow"></span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-inner-l">
-                            <img class="service-img" src="./Img/icons/3w.png" alt="box-icon">
-                            <h5>WEB DESIGN</h5>
-                        </div>
-                        <div class="box-inner-r">
-                            <span class="arrow"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-<!--!--------------------- JON DOE ------------------------->
-
-        <section class="section-20">
-            <div class="container jon-doe">
-                <span class="arrow-left"></span>
-                <div class="jon-doe-l">
-                    <img class="img-jon-doe" src="./Img/icons/SPEECH 4.png" alt="img">
-                </div>
-                <div class="jon-doe-r">
-                    <p class="p-jon-doe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veniam deleniti molestiae natus obcaecati odio molestias voluptatum, quidem quas neque tenetur sequi, dolor laborum repellat amet dignissimos?</p>
-                    <h4>Jon Doe</h4>
-                </div>
-                <span class="arrow-right"></span>
-            </div>
-        </section>
-
-<!--!--------------------- TEAM ------------------------->
-
-        <section id="team" class="section-team">
-            <div class="container section-title">
-                <h4>Who we are</h4>
-                <h3>MEET OUR TEAM</h3>
-            </div>
-            <p class="container title-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae cumque molestiae commodi porro nulla voluptates. Blanditiis aut harum repellat aspernatur alias vel obcaecati reprehenderit cum iure, dolorum aliquam earum impedit quis ut porro incidunt expedita.</p>
-            <div class="container team">
-                <div>
-                    <div class="team-img">
-                        <img src="./Img/people/mee1.webp" alt="Matthew Dix">
-                        <div class="team-hover">
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee1.png" alt="Facebook">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee2.png" alt="Twitter">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee3.png" alt="Pinterest">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee4.png" alt="Instagram">
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="h5-team">MATTHEW DIX</h5>
-                    <p class="p-team">Graphic Desingn</p>
-                </div>
-                 <div>
-                    <div class="team-img">
-                        <img src="./Img/people/mee2.webp" alt="Matthew Dix">
-                        <div class="team-hover">
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee1.png" alt="Facebook">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee2.png" alt="Twitter">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee3.png" alt="Pinterest">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee4.png" alt="Instagram">
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="h5-team">CHRISTOPHER CAMPBELL</h5>
-                    <p class="p-team">Branding/UX design</p>
-                </div>
-                 <div>
-                    <div class="team-img">
-                        <img src="./Img/people/mee3.webp" alt="Matthew Dix">
-                        <div class="team-hover">
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee1.png" alt="Facebook">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee2.png" alt="Twitter">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee3.png" alt="Pinterest">
-                            </a>
-                            <a href="#" class="team-social">
-                                <img src="./Img/icons/mee4.png" alt="Instagram">
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="h5-team">MICHAEL FERTIG</h5>
-                    <p class="p-team">Developer</p>
-                </div>
-            </div>
-        </section>
-
-<!--!--------------------- LOGOS ------------------------->
-
-        <section class="section-20 section-20-m">
-            <div class="container logos">
-                <img src="./Img/backgrounds/kolo.png" alt="logos">
-            </div>
-        </section>
-
-<!--!--------------------- GALLERY ------------------------->         
-
-        <section id="gallery" class="section-gallery">
-            <div class="container section-title">
-                <h4>What we do</h4>
-                <h3>SOME OF OUR WORK</h3>
-            </div>
-            <p class="container title-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae cumque molestiae commodi porro nulla voluptates. Blanditiis aut harum repellat aspernatur alias vel obcaecati reprehenderit cum iure, dolorum aliquam earum impedit quis ut porro incidunt expedita.</p>
-            
-            
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="./Img/img/work1.webp" alt="Gallery image1">
-
-                    <div class="gallery-hover">
-                        <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-
-                <div class="gallery-item">
-                    <img src="./Img/img/work2.webp" alt="Gallery image1">
-
-                    <div class="gallery-hover">
-                        <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-
-                <div class="gallery-item">
-                    <img src="./Img/img/work5.webp" alt="Gallery image1">
-
-                    <div class="gallery-hover">
-                        <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-
-                <div class="gallery-item">
-                    <img src="./Img/img/work6.webp" alt="Gallery image1">
-
-                    <div class="gallery-hover">
-                        <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-
-                <div class="gallery-item">
-                    <img src="./Img/img/work3.webp" alt="Gallery image1">
-
-                    <div class="gallery-hover">
-                        <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-
-                <div class="gallery-item">
-                    <img src="./Img/img/work4.webp" alt="Gallery image1">
-
-                    <div class="gallery-hover">
-                        <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-
-                <div class="gallery-item">
-                    <img src="./Img/img/work7.webp" alt="Gallery image1">
-
-                    <div class="gallery-hover">
-                        <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-
-            </div>
-            
-        </section>
-
-<!--!--------------------- Joshua Ear -------------------------> 
-
-        <section class="section-after-gallery">
-            <div class="container jon-doe">
-                <span class="arrow-left"></span>
-                <div class="jon-doe-l">
-                    <img class="img-jon-doe" src="./Img/people/Layer 36.png" alt="img">
-                </div>
-                <div class="jon-doe-r">
-                    <p class="p-jon-doe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veniam deleniti molestiae natus obcaecati odio molestias voluptatum, quidem quas neque tenetur sequi, dolor laborum repellat amet dignissimos?</p>
-                    <h4>Joshua Earle</h4>
-                </div>
-                <span class="arrow-right"></span>
-            </div>
-        </section>
-    </main>
-
-
-    <footer>
-
-<!--!--------------------- MAP ------------------------->
-
-        <section class="section-20 map-20">
-           <div class="container section-title map">
-                <img src="./Img/icons/PIN 2.png" alt="icon-map">
-                <h3>OPEN MAP</h3>
-                
-           </div>
-           
         </section>
         
-        <div class="footer">
-            <a href="https://x1ll-l.github.io/Mogo/" target="_blank">www.x1ll-l.github.io/Mogo/</a>
-        </div>
+        <hr class="hr-mellon">
+
+<!--!---------------- SERVICE ------------------>
+
+        <section class="section container" id="service">
+            <div class="section-title">
+                <h3>Servise</h3>
+                <h2>WHAT WE DO</h2>
+            </div>
+            <p class="section-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae reiciendis molestias porro harum nobis. Ut in obcaecati quaerat. Nisi sint aliquam pariatur, cumque quis quos quod animi vero ex cupiditate doloribus dolorem ipsa placeat.</p>
+
+            <div class="service-content section-top">
+
+                <div>
+                    <img class="img-l" src="./Img/people/boy.webp" alt="">
+                </div>
+                
+                <div>
+                    
+                    <div class="serviсe-box">
+                        <div class="box box-oppen">
+                            <div class="q1">
+                                <div class="box-inner-l">
+                                    <img class="service-img" src="./Img/icons/PICTURE1.png" alt="box-icon">
+                                    <h5>PHOTOGRAPHY</h5>
+                                </div>
+                                <div class="box-inner-r">
+                                    <span class="arrow-up"></span>
+                                </div>
+                            </div>   
+                            <hr class="box-hr">
+                            <div class="q2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi ratione doloribus fugiat, pariatur ex quam deserunt soluta quo reprehenderit et quia magnam dignissimos repudiandae laborum hic omnis eaque saepe amet sit, ipsam nisi adipisci?</p>
+                                <div class="w1"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <div class="box-inner-l">
+                                <img class="service-img" src="./Img/icons/2w.png" alt="box-icon">
+                                <h5>GREATIVITY</h5>
+                            </div>
+                            <div class="box-inner-r">
+                                <span class="arrow"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-inner-l">
+                                <img class="service-img" src="./Img/icons/3w.png" alt="box-icon">
+                                <h5>WEB DESIGN</h5>
+                            </div>
+                            <div class="box-inner-r">
+                                <span class="arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+  
+    </main>
+    <footer>
+        
     </footer>
-
-    <nav class="page-navigation">
-        <a href="#top" class="page-nav-item page-nav-arrow arrow-up" aria-label="В начало страницы"></a>
-        <a href="#about" class="page-nav-item" aria-label="О нас"></a>
-        <a href="#services" class="page-nav-item" aria-label="Услуги"></a>
-        <a href="#team" class="page-nav-item" aria-label="Команда"></a>
-        <a href="#gallery" class="page-nav-item" aria-label="Галерея"></a>
-        <a href="#bottom" class="page-nav-item page-nav-arrow arrow-down" aria-label="В конец страницы"></a>
-    </nav>
-
-    <div id="bottom"></div>
-
-    
 </body>
 </html>
+
+
+
+                
