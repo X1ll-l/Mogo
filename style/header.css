@@ -259,4 +259,11 @@
             }
         }
     }
+    .nav {
+    display: none;
+    }
+
+    #burger-toggle:checked ~ .nav {
+        display: flex;
+    }
 }
