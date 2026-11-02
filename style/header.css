@@ -13,7 +13,7 @@
 
 
 .hero {
-    height: 100%;
+    height: 100%;  
 }
 
 .navigation {
@@ -26,16 +26,10 @@
         font-size: 30px;
         font-weight: 600;
         transition: var(--transition);
-    }
-}
 
-@media (hover: hover) and (pointer: fine) {
-    .navigation {
-        .logo {
-            &:hover {
-                transform: var(--icon-scale);
-                color: var(--mogo3);
-            }
+        &:hover {
+            transform: var(--icon-scale);
+            color: var(--mogo3);
         }
     }
 }
@@ -50,30 +44,18 @@
         display: flex;
         gap: 20px;
     }
-
     .li-a {
         transition: var(--transition);
+        &:hover {
+            color: var(--mogo3);
+            text-underline-offset: 8px;
+            text-decoration: underline;
+        }
     }
-
     .img-scale {
         transition: var(--transition);
-    }
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .nav {
-        .li-a {
-            &:hover {
-                color: var(--mogo3);
-                text-underline-offset: 8px;
-                text-decoration: underline;
-            }
-        }
-
-        .img-scale {
-            &:hover {
-                transform: var(--icon-scale);
-            }
+        &:hover {
+            transform: var(--icon-scale);
         }
     }
 }
@@ -85,6 +67,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     h2 {
         font-size: clamp(20px, 3vw, 70px);
         font-family: "Kaushan";
@@ -94,7 +77,7 @@
         line-height: 1;
         letter-spacing: -6px;
         text-align: center;
-        &::after {
+        &::after{
             content: "";
             display: block;
             width: 90px;
@@ -111,6 +94,10 @@
         padding: 6px 20px;
         border: 3px solid var(--white);
         transition: var(--transition);
+        &:hover {
+            color: var(--mogo3);
+            border: 3px solid var(--mogo3);
+        }
     }
 }
 
@@ -176,25 +163,19 @@
                 animation-delay: 9s;
             }
         }
-    }
-}
 
-@media (hover: hover) and (pointer: fine) {
-    .slider {
-        .slider-item {
-            &:hover {
+        &:hover {
+            animation-play-state: paused;
+            color: var(--mogo1);
+            font-weight: 700;
+
+            &::before {
                 animation-play-state: paused;
-                color: var(--mogo1);
-                font-weight: 700;
-
-                &::before {
-                    animation-play-state: paused;
-                    background: linear-gradient(
-                        90deg,
-                        var(--mogo1) 36%,
-                        var(--white) 36%
-                    );
-                }
+                background: linear-gradient(
+                    90deg,
+                    var(--mogo1) 36%,
+                    var(--white) 36%
+                );
             }
         }
     }
@@ -234,7 +215,7 @@
         overflow-x: hidden;
     }
     .header {
-    height: 100dvh;
+    height: 100svh;
     }
     
     .navigation { 
@@ -251,45 +232,32 @@
             font-size: 26px;
             padding-bottom: 15px;
         }
-
         h1 {
             letter-spacing: 0;
             font-size: clamp(36px, 10vw, 48px);
-
-            &::after {
+            &::after{
                 height: 2px;
                 margin: 25px auto 25px;
             }
         }
-
         a {
             font-size: 12px;
             border: 2px solid var(--white);
+            &:hover {
+                border: 2px solid var(--mogo3);
+            }
         }
     }
-
     .slider {
         margin: 20px 10px;
-
         .slider-item {
             font-size: 10px;
-
-            &::before {
+            &::before{
                 height: 2px;
             }
 
             span {
                 font-size: 14px;
-            }
-        }
-    }
-
-    @media (hover: hover) and (pointer: fine) {
-        .hero-content {
-            a {
-                &:hover {
-                    border: 2px solid var(--mogo3);
-                }
             }
         }
     }
