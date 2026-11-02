@@ -35,7 +35,10 @@ body {
     line-height: 1.6;
     background-color: var(--white);
 }
-
+::selection {
+    background-color: var(--mogo1);
+    color: var(--mogo3);
+}
 .container {
     width: 100%;
     max-width: var(--container-width);
@@ -59,13 +62,7 @@ section {
     padding-top: var(--section-spacing-top);
 }
 
-button {
-    font: inherit;
-    cursor: pointer;
-}
-h5 {
-    font-weight: 600;
-}
+
 
 
 
@@ -75,14 +72,14 @@ h5 {
     margin-bottom: 50px;
 }
 
-.section-title h3 {
+.section-title h2 {
     font-family: "Kaushan", cursive;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.section-title h2 {
+.section-title h3 {
     font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
@@ -90,7 +87,7 @@ h5 {
     margin-bottom: 35px;
 }
 
-.section-title h2::after {
+.section-title h3::after {
     content: "";
     display: block;
     width: 60px;
@@ -117,7 +114,7 @@ h5 {
 }
 
 
-/* ? ARROW */
+/* * ARROW */
 
 .arrow-up {
     width: 15px;
@@ -163,3 +160,208 @@ h5 {
     border: none;
     background: var(--mogo2);
 }
+
+h4 {
+                font-size: 13px;
+                font-weight: 600;
+            }
+            
+body {
+    cursor: url("../Img/icons/113.svg") 0 0, auto;
+}
+
+a,
+button,
+.arrow-up,
+.arrow,
+.arrow-left::before ,
+.arrow-right::before {
+    cursor: url("../Img/icons/114.svg") 0 0, pointer;
+}
+p,
+h2,
+h3 {
+    cursor: text;
+}
+.q2 p {
+    cursor: url("../Img/icons/113.svg") 0 0, auto;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/**----------- PRELOADER ----------*/
+
+.preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(
+        180deg,
+        var(--mogo1),
+        var(--mogo3)
+    );
+
+    animation: preloader-hide 1s ease 4s forwards;
+    .preloader-content {
+        text-align: center;
+
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .preloader-line {
+            display: block;
+            width: 120px;
+            height: 3px;
+            margin: 20px auto 0;
+            background: var(--white);
+            transform-origin: left;
+            animation: loading 4s ease-in-out infinite;
+        }
+    }
+}
+@keyframes loading {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes preloader-hide {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
+body {
+    overflow: hidden;
+    animation: page-scroll 0s linear 5s forwards;
+}
+
+@keyframes page-scroll {
+    to {
+        overflow: auto;
+    }
+}
+
+/* * PAGE ARROWS */
+
+.page-arrows {
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 0.3;
+        &:hover {
+            opacity: 1;
+        }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--mogo1);
+        color: var(--white);
+        font-size: 25px;
+        text-decoration: none;
+        transition: var(--transition);
+        
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid var(--white);
+            border-left: 2px solid var(--white);
+            transform: rotate(45deg);
+        }
+
+        &.down-arrow::before {
+            transform: rotate(225deg) translate(2px, 2px);
+        }
+
+        &:hover {
+            background: var(--mogo3);
+            
+        }
+    }
+}
+
+/* ?-------- MEDIA PHONE --------- */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    :root {
+        --section-spacing-bottom: 40px;
+        --section-spacing-top: 40px;
+        --section-spacing-bottom-light: 20px;
+        --section-spacing-top-light: 20px;
+
+        --container-padding: 0px;
+    }
+
+    .section-title {
+    margin-bottom: 25px;
+    }
+    .section-title h2 {
+        font-size: 18px;
+    }
+    .section-title h3 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .section-title h3::after {
+        height: 2px;
+        margin: 25px auto 0;
+    }
+    .section-description{
+        font-size: 12px;
+        max-width: 350px;
+    }
+
+    .page-arrows {
+        right: 10px;
+        gap: 8px;
+
+        a {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+
+    [class^="arrow-"] {
+        width: 10px;
+        height: 10px;
+    }
+
+
+}    

@@ -16,7 +16,7 @@
             color: var(--mogo1);
         }
         p {
-            margin-top: 10px;
+            color: var(--white);
             font-size: 14px;
         }
     }
@@ -26,10 +26,12 @@
         gap: 15px;
 
         p {
+            color: var(--mogo1);
             font-weight: bold;
         }
 
         a {
+            color: var(--white);
             text-decoration: none;
             transition: var(--transition);
 
@@ -41,7 +43,40 @@
     .footer-copy {
         width: 100%;
         text-align: center;
-        color: #999;
+        color: var(--text-light);
         font-size: 13px;
+    }
+}
+
+
+/* ?-------- MEDIA PHONE --------- */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    .footer {
+        .footer-content {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 5px;
+            text-align: center;
+            padding: 0;
+        }
+        .footer-logo{
+            h2 {
+                font-size: 25px;
+            }
+            p{
+                font-size: 12px;
+                margin-top: 5px;
+            }
+        }
+        .footer-social {
+            gap: 10px;
+            p{
+                font-size: 14px;
+            }
+            a {
+                font-size: 12px;
+            }
+        }
     }
 }

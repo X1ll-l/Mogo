@@ -6,7 +6,7 @@
             rgba(var(--mogo1-rgb), 0.9),
             rgba(var(--mogo3-rgb), 0.9)
         ),
-        url("../Img/backgrounds/Layer\ 15.webp") center / cover no-repeat;
+        url("../Img/backgrounds/Layer15.webp") center / cover no-repeat;
 }
 
 
@@ -85,7 +85,7 @@
             margin: 35px auto 35px;
         }
     }
-    button {
+    a {
         background: none;
         color: var(--white);
         font-size: 16px;
@@ -124,16 +124,52 @@
             width: 90%;
             height: 3px;
             background-color: rgba(255, 255, 255, 0.5);
-            transition: var(--transition);
+            animation: slider-line 12s infinite;
         }
 
         span {
             font-size: 18px;
         }
-        &.active {
+
+        &:nth-child(1) {
+            animation: slider-active 12s infinite;
+
+            &::before {
+                animation-delay: 0s;
+            }
+        }
+
+        &:nth-child(2) {
+            animation: slider-active 12s infinite 3s;
+
+            &::before {
+                animation-delay: 3s;
+            }
+        }
+
+        &:nth-child(3) {
+            animation: slider-active 12s infinite 6s;
+
+            &::before {
+                animation-delay: 6s;
+            }
+        }
+
+        &:nth-child(4) {
+            animation: slider-active 12s infinite 9s;
+
+            &::before {
+                animation-delay: 9s;
+            }
+        }
+
+        &:hover {
+            animation-play-state: paused;
+            color: var(--mogo1);
             font-weight: 700;
 
             &::before {
+                animation-play-state: paused;
                 background: linear-gradient(
                     90deg,
                     var(--mogo1) 36%,
@@ -141,17 +177,85 @@
                 );
             }
         }
+    }
+}
 
-        &:hover {
-            color: var(--mogo1);
-            font-weight: 700;
+@keyframes slider-active {
+    0%, 24% {
+        color: var(--mogo1);
+        font-weight: 700;
+    }
 
-            &::before {
-                background: linear-gradient(
-                    90deg,
-                    var(--mogo1) 36%,
-                    var(--white) 36%
-                );
+    25%, 100% {
+        color: var(--white);
+        font-weight: 400;
+    }
+}
+
+@keyframes slider-line {
+    0%, 24% {
+        background: linear-gradient(
+            90deg,
+            var(--mogo1) 36%,
+            var(--white) 36%
+        );
+    }
+
+    25%, 100% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* ?-------- MEDIA PHONE --------- */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .header {
+    height: 100svh;
+    }
+    
+    .navigation {
+    flex-direction: column;
+    gap: 10px;
+        .logo {
+            margin-top: 10px;
+        }
+    }
+
+    .hero-content {
+        h2 {
+            font-size: 26px;
+            padding-bottom: 15px;
+        }
+        h1 {
+            letter-spacing: 0;
+            font-size: clamp(36px, 10vw, 48px);
+            &::after{
+                height: 2px;
+                margin: 25px auto 25px;
+            }
+        }
+        a {
+            font-size: 12px;
+            border: 2px solid var(--white);
+            &:hover {
+                border: 2px solid var(--mogo3);
+            }
+        }
+    }
+    .slider {
+        margin-top: 20px;
+        .slider-item {
+            font-size: 10px;
+            &::before{
+                height: 2px;
+            }
+
+            span {
+                font-size: 14px;
             }
         }
     }

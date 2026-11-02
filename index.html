@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Yevhen Moskalenko">
+    <meta name="keywords" content="MoGo, design, web design, creative, agency">
+    <meta name="description" content="MoGo - Creative Design Agency. We create beautiful websites and digital experiences.">
+
     <title>MoGo</title>
     <link rel="icon" href="./Img/icons/M.webp" type="image/png">
 
@@ -16,7 +21,22 @@
 
 
 <body>
-    <header class="header">
+        <!--? PRELOADER -->
+    <!-- <div class="preloader">
+        <div class="preloader-content">
+            <h1>MoGo</h1>
+            <span class="preloader-line"></span>
+        </div>
+    </div> -->
+
+    <!--? PAGE ARROWS -->
+    <div class="page-arrows">
+        <a href="#top" class="up-arrow" aria-label="Scroll to top"></a>
+        <a href="#bottom" class="down-arrow" aria-label="Scroll to bottom"></a>
+    </div>
+
+
+    <header class="header" id="top">
         <div class="container hero">
             <div class="navigation">
                 <a class="logo" href="#">MoGo</a>
@@ -25,25 +45,22 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a class="li-a" href="#about">ABOUT</a></li>
-                        <li><a class="li-a" href="#services">SERVICE</a></li>
+                        <li><a class="li-a" href="#service">SERVICE</a></li>
                         <li><a class="li-a" href="#team">WORK</a></li>
                         <li><a class="li-a" href="#gallery">BLOG</a></li>
-                        <li><a class="li-a" href="#bottom">CONTACT</a></li>
+                        <li><a class="li-a" href="#map">CONTACT</a></li>
                     </ul>
                     
-                    <a class="img-scale" href="#"><img src="./Img/icons/SHOPPING CART.png" alt="SHOPPING"></a>
-                    <a class="img-scale" href="#"><img src="./Img/icons/MAGNIFYING GLASS.png" alt="MAGNIFYING"></a>
+                    <a class="img-scale" href="#"><img src="./Img/icons/SHOPPINGCART.png" alt="SHOPPING"></a>
+                    <a class="img-scale" href="#"><img src="./Img/icons/MAGNIFYINGLASS.png" alt="MAGNIFYING"></a>
                 </nav>              
-
 
             </div>
 
             <div class="hero-content">
                 <h2>Creative Template</h2>
                 <h1>WELCOME <br> TO MOGO</h1>
-                <button>
-                    <a href="#about">LEARN MORE</a>
-                </button>
+                <a href="#about">LEARN MORE</a>
             </div>
                 
             <div class="slider">
@@ -66,30 +83,30 @@
     
     <main>
 
-<!--!---------------- ABOUT ------------------>
+<!--!============== ABOUT ============== -->
 
         <section class="section container" id="about">
             <div class="section-title">
-                <h3>What we do</h3>
-                <h2>STORY ABOUT US</h2>
+                <h2>What we do</h2>
+                <h3>STORY ABOUT US</h3>
             </div>
             <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta unde beatae eligendi repudiandae? Iste, molestias totam delectus quaerat, repellat vitae atque neque, vel obcaecati earum nam mollitia tenetur ratione!</p>
 
             <div class="about-cards section-top">
                 <div class="about-item">
-                    <img src="./Img/img/1.png" alt="img1">
+                    <img src="./Img/img/1.webp" alt="img1">
                     <div class="about-hover">
                         <a href="#about">Read More</a>
                     </div>
                 </div>
                 <div class="about-item">
-                    <img src="./Img/img/2.png" alt="img2">
+                    <img src="./Img/img/2.webp" alt="img2">
                     <div class="about-hover">
                         <a href="#about">Read More</a>
                     </div>
                 </div>
                 <div class="about-item">
-                    <img src="./Img/img/3.png" alt="img3">
+                    <img src="./Img/img/3.webp" alt="img3">
                     <div class="about-hover">
                         <a href="#about">Read More</a>
                     </div>
@@ -97,9 +114,10 @@
             </div>
         </section>
 
-<!--!---------------- STATISTICS ------------------>
+<!--!============== STATISTICS ============== -->
 
         <section class="section statistics">
+            <h2 class="visually-hidden">Our statistics</h2>
             <div class="container">
                 <div class="statistics-box">
 
@@ -132,12 +150,12 @@
             </div>
         </section>
 
-<!--!---------------- AMAZING SERVICES ------------------>
+<!--!============== AMAZING SERVICES ============== -->
 
         <section class="section container" id="amazing">
             <div class="section-title">
-                <h3>We work whith</h3>
-                <h2>AMAZING SERVICES</h2>
+                <h2>We work whith</h2>
+                <h3>AMAZING SERVICES</h3>
             </div>
             <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur sequi optio iusto eaque mollitia delectus autem eveniet consectetur modi minima ad harum unde nesciunt, dolor molestias dolorum magnam perspiciatis illum ab, eius eos! Reprehenderit, similique molestias? Eveniet, suscipit error.</p>
 
@@ -146,7 +164,7 @@
                     <div>
                         <img class="amazing-img" src="./Img/icons/s1.png" alt="icon">
                         <div class="amazing-text">
-                            <h5>PHOTOGRAPHY</h5>
+                            <h3>PHOTOGRAPHY</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi quam mollitia.</p>
                         </div>
                     </div>
@@ -154,7 +172,7 @@
                     <div>
                         <img class="amazing-img" src="./Img/icons/s2.png" alt="icon">
                         <div class="amazing-text">
-                            <h5>WEB DESING</h5>
+                            <h3>WEB DESING</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro officiis adipisci!</p>
                         </div>
                     </div>
@@ -162,7 +180,7 @@
                     <div>
                         <img class="amazing-img" src="./Img/icons/s3.png" alt="icon">
                         <div class="amazing-text">
-                            <h5>CREATIVITY</h5>
+                            <h3>CREATIVITY</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut suscipit numquam?</p>
                         </div>
                     </div>
@@ -175,7 +193,7 @@
                 <div>
                     <img class="amazing-img" src="./Img/icons/s4.png" alt="icon">
                     <div class="amazing-text">
-                        <h5>SEO</h5>
+                        <h3>SEO</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui dignissimos non.</p>
                     </div>
                 </div>
@@ -183,7 +201,7 @@
                 <div>
                     <img class="amazing-img" src="./Img/icons/s5.png" alt="icon">
                     <div class="amazing-text">
-                           <h5>CSS/HTML</h5>
+                           <h3>CSS/HTML</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed a illum laboriosam?</p>
                     </div>
                 </div>
@@ -191,7 +209,7 @@
                 <div>
                     <img class="amazing-img" src="./Img/icons/s6.png" alt="icon">
                     <div class="amazing-text">
-                        <h5>DIGITAL</h5>
+                        <h3>DIGITAL</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum deleniti tenetur?</p>
                     </div>
                 </div>
@@ -200,12 +218,12 @@
         
         <hr class="hr-mellon">
 
-<!--!---------------- SERVICE ------------------>
+<!--!============== SERVICE ============== -->
 
         <section class="section container" id="service">
             <div class="section-title">
-                <h3>Servise</h3>
-                <h2>WHAT WE DO</h2>
+                <h2>Servise</h2>
+                <h3>WHAT WE DO</h3>
             </div>
             <p class="section-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae reiciendis molestias porro harum nobis. Ut in obcaecati quaerat. Nisi sint aliquam pariatur, cumque quis quos quod animi vero ex cupiditate doloribus dolorem ipsa placeat.</p>
 
@@ -222,8 +240,8 @@
 
                         <div class="box-oppen-inner">
                             <div class="box-close-item">
-                                <img src="./Img/icons/2w.png" alt="2">
-                                <h5>GREATIVITY</h5>
+                                <img src="./Img/icons/PICTURE1.png" alt="2">
+                                <h4>GREATIVITY</h4>
                             </div>
                             <div class="arrow-up"></div>
                         </div>
@@ -237,7 +255,7 @@
                     <div class="box-close">
                         <div class="box-close-item">
                             <img src="./Img/icons/2w.png" alt="2">
-                            <h5>GREATIVITY</h5>
+                            <h4>GREATIVITY</h4>
                         </div>
                         <div class="arrow-down"></div>
                     </div>
@@ -246,7 +264,7 @@
                     <div class="box-close">
                         <div class="box-close-item">
                             <img src="./Img/icons/3w.png" alt="3">
-                            <h5>WEB DESIGN</h5>
+                            <h4>WEB DESIGN</h4>
                         </div>
                         <div class="arrow-down"></div>
                     </div>
@@ -255,13 +273,14 @@
             </div>
         </section>
 
-<!--!---------------- QUOTE-1 ------------------>
+<!--!============== QUOTE-1 ============== -->
 
         <section class="section-light quote">
-            <div class="container">
+            <h2 class="visually-hidden">Our statistics</h2>
+            <div class="container quto-mellan">
                 <div class="quote-container">
                     <div class="arrow-left"></div>
-                    <img src="./Img/icons/SPEECH 4.png" alt="">
+                    <img src="./Img/icons/SPEECH4.png" alt="">
                     <div class="quote-text">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est adipisci dolorem temporibus? Officia voluptatum minima voluptatibus repudiandae tempora numquam saepe quae ipsa quod? Distinctio libero nobis neque quibusdam, qui fugit.</p>
                         <h3>Jon Doe</h3>
@@ -271,12 +290,12 @@
             </div>
         </section>
   
-<!--!---------------- TEAM ------------------>
+<!--!============== TEAM ============== -->
 
         <section class="section container" id="team">
             <div class="section-title">
-                <h3>Who we are</h3>
-                <h2>MEET OUR TEAM</h2>
+                <h2>Who we are</h2>
+                <h3>MEET OUR TEAM</h3>
             </div>
             <p class="section-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae cumque molestiae commodi porro nulla voluptates. Blanditiis aut harum repellat aspernatur alias vel obcaecati reprehenderit cum iure, dolorum aliquam earum impedit quis ut porro incidunt expedita.</p>
 
@@ -347,21 +366,22 @@
             </div>
         </section>
 
-<!--!---------------- QUTE-2 ------------------>
+<!--!============== QUTE-2 ============== -->
 
          <section class="section-light quote">
+            <h2 class="visually-hidden">Our statistics</h2>
             <div class="container">
                     <img src="./Img/backgrounds/kolo.png" alt="logos">
             </div>
         </section>
 
-<!--!---------------- GAllERY ------------------>
+<!--!============== GAllERY ============== -->
 
         <section class="section" id="gallery">
             <div class="container">
                 <div class="section-title">
-                    <h3>What we do</h3>
-                    <h2>SOME OF OUR WORK</h2>
+                    <h2>What we do</h2>
+                    <h3>SOME OF OUR WORK</h3>
                 </div>
                 <p class="section-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae cumque molestiae commodi porro nulla voluptates. Blanditiis aut harum repellat aspernatur alias vel obcaecati reprehenderit cum iure, dolorum aliquam earum impedit quis ut porro incidunt expedita.</p>
             </div>
@@ -373,7 +393,7 @@
 
                     <div class="gallery-hover">
                         <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
+                        <h4>CREATIVELY DESIGNED</h4>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
@@ -384,7 +404,7 @@
 
                     <div class="gallery-hover">
                         <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
+                        <h4>CREATIVELY DESIGNED</h4>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
@@ -395,7 +415,7 @@
 
                     <div class="gallery-hover">
                         <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
+                        <h4>CREATIVELY DESIGNED</h4>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
@@ -406,7 +426,7 @@
 
                     <div class="gallery-hover">
                         <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
+                        <h4>CREATIVELY DESIGNED</h4>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
@@ -417,7 +437,7 @@
 
                     <div class="gallery-hover">
                         <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
+                        <h4>CREATIVELY DESIGNED</h4>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
@@ -428,7 +448,7 @@
 
                     <div class="gallery-hover">
                         <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
+                        <h4>CREATIVELY DESIGNED</h4>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
@@ -439,20 +459,21 @@
 
                     <div class="gallery-hover">
                         <img src="./Img/icons/PICTURE.png" alt="">
-                        <h5>CREATIVELY DESIGNED</h5>
+                        <h4>CREATIVELY DESIGNED</h4>
                         <p>Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
             </div>
         </section>
 
-<!--!---------------- QUOTE-3 ------------------>
+<!--!============== QUOTE-3 ============== -->
 
         <section class="section-light quote">
-            <div class="container">
+            <h2 class="visually-hidden">Our statistics</h2>
+            <div class="container quto-mellan">
                 <div class="quote-container">
                     <div class="arrow-left"></div>
-                    <img src="./Img/people/Layer 36.png" alt="">
+                    <img class="img-q3" src="./Img/people/Layer36.png" alt="">
                     <div class="quote-text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veniam deleniti molestiae natus obcaecati odio molestias voluptatum, quidem quas neque tenetur sequi, dolor laborum repellat amet dignissimos?</p>
                         <h3>Joshua Earle</h3>
@@ -462,19 +483,20 @@
             </div>
         </section>
 
-<!--!---------------- MAP ------------------>
+<!--!============== MAP ============== -->
 
-        <hr class="hr-mellon-spacing">
+        <hr class="hr-mellon-spacing" id="map">
 
         <section class="section-light map">
             <div class="container box-map">
-                 <img src="./Img/icons/PIN 2.png" alt="">
+                 <img src="./Img/icons/PIN2.png" alt="">
                 <h3>OPEN MAP</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15505.690707282787!2d18.071556874994652!3d59.32046016983904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5945458205%3A0x1df0a2acc2aa00fc!2z0JrRg9C90YHRgtGA0LXQtNCz0L7RgNC00LXQvQ!5e0!3m2!1sru!2sse!4v1793555505606!5m2!1sru!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d130311.67671210832!2d18.061634!3d59.314254000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sse!4v1793563539155!5m2!1sru!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>    
         </section>
     </main>
     
-    <footer class="footer">
+    <footer class="footer " id="bottom">
     <div class="container footer-content">
 
         <div class="footer-logo">
